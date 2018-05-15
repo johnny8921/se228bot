@@ -1,0 +1,10 @@
+certifi==2018.4.16
+chardet==3.0.4
+idna==2.6
+mqttclient==0.0.2
+onoff==1.0.1
+paho-mqtt==1.3.1
+requests==2.18.4
+UNKNOWN==0.0.0
+urllib3==1.22
+wheezy.routing==0.1.157
