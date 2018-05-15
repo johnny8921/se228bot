@@ -9,11 +9,12 @@ class BotHandler:
         self.api_url = "https://api.telegram.org/bot{}/".format(token)
 
     def get_updates(self, offset=None, timeout=30):
+        print('waiting...')
         method = 'getUpdates'
         params = {'timeout': timeout, 'offset': offset}
         resp = requests.get(self.api_url + method, params)
         result_json = resp.json()['result']
-        print('waiting...')
+
         return result_json
 
     def send_message(self, chat_id, text):
